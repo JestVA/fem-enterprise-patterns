@@ -102,11 +102,9 @@ describe('HomeComponent', () => {
 			price: 100,
 		};
 
-		expect(widgets.length).toBe(0);
-
 		widgets = component.deleteWidget(widgets, widget);
 
-		expect(widgets.length).toBe(1);
+		expect(widgets.length).toBe(0);
 	});
 
 	it('should get total price on getTotalPrice', () => {
